@@ -1,5 +1,7 @@
 package juc.lean;
 
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -10,8 +12,9 @@ import java.util.concurrent.atomic.AtomicInteger;
  **/
 public class AtomicLean {
     public static void main(String[] args) {
+        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(10000, 10000, 60, TimeUnit.SECONDS, new ArrayBlockingQueue<>(200));
         for (int i = 0; i < 10000; i++) {
-            new Thread(new MyAddTask()).start();
+            threadPoolExecutor.execute(new MyAddTask());
         }
         try {
             TimeUnit.SECONDS.sleep(3);
@@ -19,18 +22,22 @@ public class AtomicLean {
             e.printStackTrace();
         }
         System.out.println(MyAddTask.count);
-        System.out.println(MyAddTask.atomicInteger);// toString()方法已经重写
+        System.out.println(MyAddTask.atomicInteger);
+        threadPoolExecutor.shutdown();
     }
 }
+
 class MyAddTask implements Runnable {
-    public static int count = 0;
+//    public static int count = 0;
+    public static volatile int count = 0;
     public static AtomicInteger atomicInteger = new AtomicInteger();
+
     @Override
     public void run() {
         count++;
-//        synchronized (""){
-//        count++;
-////        }
+//        synchronized ("") {
+//            count++;
+//        }
         atomicInteger.addAndGet(1);
     }
 }
