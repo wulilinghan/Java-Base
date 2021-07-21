@@ -4,7 +4,7 @@ package designpattern.factory;
  * @program: java-base->SimpleFactoryTest
  * @description: test
  * @author: G_Y
- * @create: 2019-08-16 17:19
+ * @since: 2019-08-16 17:19
  **/
 public class SimpleFactoryTest {
 

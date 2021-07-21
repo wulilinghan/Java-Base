@@ -10,7 +10,7 @@ import java.lang.reflect.Method;
  * @program: java-base->MyMethodInterceptor
  * @description: cglib动态代理回调处理类
  * @author: G_Y
- * @create: 2019-08-21 17:58
+ * @since: 2019-08-21 17:58
  * 跟jdk动态代理最大的区别是，cglib代理没有被代理对象
  * 所有执行方法的对象，都是被代理类的子类的对象
  **/

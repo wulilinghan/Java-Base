@@ -7,7 +7,7 @@ import java.lang.reflect.Method;
  * @program: java-base->MyInvocation
  * @description: invocation
  * @author: G_Y
- * @create: 2019-08-19 18:48
+ * @since: 2019-08-19 18:48
  **/
 public class MyInvocationHandler implements InvocationHandler {
     // 委托者对象

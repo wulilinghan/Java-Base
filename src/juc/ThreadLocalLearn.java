@@ -4,7 +4,7 @@ package juc;
  * @program: java-base->ThreadLocalLearn
  * @description: ThreadLocal使用
  * @author: G_Y
- * @create: 2019-08-21 13:43
+ * @since: 2019-08-21 13:43
  **/
 public class ThreadLocalLearn {
     public static void main(String[] args) {

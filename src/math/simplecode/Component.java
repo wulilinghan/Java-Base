@@ -7,7 +7,7 @@ import java.util.Map;
  * @program: java-base->Componet
  * @description:
  * @author: G_Y
- * @create: 2019-08-28 15:15
+ * @since: 2019-08-28 15:15
  **/
 public class Component {
     public static final Map<String, Handler> map = new HashMap<>(16);

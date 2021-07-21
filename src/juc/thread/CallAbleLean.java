@@ -1,4 +1,4 @@
-package juc.lean;
+package juc.thread;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -35,7 +35,6 @@ public class CallAbleLean {
         ExecutorService executorService = Executors.newSingleThreadExecutor();
         Future<Integer> future = executorService.submit(myCallableTask);
         try {
-
 //            Integer integer = future.get();
 
             // 可以设置超时时间

@@ -4,7 +4,7 @@ package thread;
  * @program: java-base->SyncTest
  * @description:
  * @author: G_Y
- * @create: 2019-09-18 18:45
+ * @since: 2019-09-18 18:45
  **/
 public class SyncTest2 {
     public static void main(String[] args) throws InterruptedException {

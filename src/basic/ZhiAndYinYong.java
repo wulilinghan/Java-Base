@@ -6,7 +6,7 @@ import java.util.Arrays;
  * @program: java-base->ZhiAndYinYong
  * @description:
  * @author: G_Y
- * @create: 2019-09-18 16:23
+ * @since: 2019-09-18 16:23
  **/
 public class ZhiAndYinYong {
 //    public static void main(String[] args) {

@@ -1,9 +1,8 @@
-package juc;
+package juc.thread;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.RejectedExecutionHandler;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
@@ -11,7 +10,7 @@ import java.util.concurrent.TimeUnit;
  * @program: java-base->ThreadPoolExcutorLearn
  * @description:
  * @author: G_Y
- * @create: 2019-08-21 13:42
+ * @since: 2019-08-21 13:42
  **/
 public class ThreadPoolExcutorLearn {
 

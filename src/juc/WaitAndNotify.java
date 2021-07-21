@@ -1,4 +1,4 @@
-package juc.lean;
+package juc;
 
 /**
  * @Author G_Y

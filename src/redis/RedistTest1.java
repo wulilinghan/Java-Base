@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
  * @program: java-base->RedistTest1
  * @description:
  * @author: G_Y
- * @create: 2019-08-23 12:49
+ * @since: 2019-08-23 12:49
  **/
 public class RedistTest1 {
     public static String KEY = "KEY";

@@ -4,7 +4,7 @@ package thread.threadSafe;
  * @program: java-base->NotUseSynchronizedTest
  * @description:
  * @author: G_Y
- * @create: 2019-08-27 21:35
+ * @since: 2019-08-27 21:35
  **/
 public class NotUseSynchronizedTest {
 

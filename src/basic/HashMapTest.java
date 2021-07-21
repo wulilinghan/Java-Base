@@ -12,7 +12,7 @@ import java.util.concurrent.locks.Lock;
  * @program: java-base->HashMapTest
  * @description: hashMap
  * @author: G_Y
- * @create: 2019-09-27 20:26
+ * @since: 2019-09-27 20:26
  **/
 public class HashMapTest {
     public static void main(String[] args) {

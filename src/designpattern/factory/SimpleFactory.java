@@ -4,7 +4,7 @@ package designpattern.factory;
  * @program: java-base->SimpleFactory
  * @description: 简单工厂
  * @author: G_Y
- * @create: 2019-08-16 16:54
+ * @since: 2019-08-16 16:54
  **/
 public class SimpleFactory {
 

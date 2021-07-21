@@ -10,11 +10,9 @@ import static java.util.concurrent.Executors.newFixedThreadPool;
  * @program: java-base->FutrureLearn
  * @description:
  * @author: G_Y
- * @create: 2019-08-21 13:41
+ * @since: 2019-08-21 13:41
  **/
 public class FutrureLearn {
-
-
     public static void main(String[] args) throws ExecutionException, InterruptedException {
 
         // 创建一个执行任务目标

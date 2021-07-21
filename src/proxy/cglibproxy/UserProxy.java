@@ -9,7 +9,7 @@ import java.lang.reflect.Method;
  * @program: java-base->UserProxy
  * @description:
  * @author: G_Y
- * @create: 2019-08-22 12:33
+ * @since: 2019-08-22 12:33
  * 模拟内存中的cglib代理类——User类的子类
  **/
 public class UserProxy extends User {

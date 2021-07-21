@@ -4,7 +4,7 @@ package proxy.cglibproxy;
  * @program: java-base->User
  * @description: user
  * @author: G_Y
- * @create: 2019-08-21 17:53
+ * @since: 2019-08-21 17:53
  * 被代理类
  **/
 public class User {

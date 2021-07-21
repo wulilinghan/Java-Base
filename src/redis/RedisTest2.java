@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
  * @program: java-base->RedisTest2
  * @description:
  * @author: G_Y
- * @create: 2019-08-23 12:49
+ * @since: 2019-08-23 12:49
  **/
 public class RedisTest2 {
 
