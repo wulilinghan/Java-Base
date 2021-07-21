@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * @program: java-base->ThreadPoolExcutorLearn
  * @description:
- * @author: G_Y
+ * @author: ManJiis
  * @since: 2019-08-21 13:42
  **/
 public class ThreadPoolExcutorLearn {

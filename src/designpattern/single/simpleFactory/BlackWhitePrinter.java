@@ -1,8 +1,8 @@
 package designpattern.single.simpleFactory;
 
 /**
- * @Author G_Y
- * @Date 2020/9/6 20:11
+ * @author ManJiis
+ * @since 2020/9/6 20:11
  * @Description: // 黑白打印机
  **/
 public class BlackWhitePrinter implements Printer {

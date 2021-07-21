@@ -6,8 +6,8 @@ import org.slf4j.LoggerFactory;
 import java.util.concurrent.*;
 
 /**
- * @Author G_Y
- * @Date 2020/7/21 19:28
+ * @author ManJiis
+ * @since 2020/7/21 19:28
  * @Description: 用Callable任务计算1-100的和
  **/
 public class CallAbleLean {

@@ -3,7 +3,7 @@ package thread.threadSafe;
 /**
  * @program: java-base->NotUseSynchronizedTest
  * @description:
- * @author: G_Y
+ * @author: ManJiis
  * @since: 2019-08-27 21:35
  **/
 public class NotUseSynchronizedTest {

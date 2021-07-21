@@ -3,7 +3,7 @@ package proxy.cglibproxy;
 /**
  * @program: java-base->User
  * @description: user
- * @author: G_Y
+ * @author: ManJiis
  * @since: 2019-08-21 17:53
  * 被代理类
  **/

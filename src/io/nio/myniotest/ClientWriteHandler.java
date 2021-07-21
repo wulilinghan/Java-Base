@@ -11,9 +11,9 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * @Author: GY.
+ * @author: GY.
  * @Description:
- * @Date:Created in 2019/11/21 0021.
+ * @since:Created in 2019/11/21 0021.
  * @Modified By:
  */
 public class ClientWriteHandler implements Runnable {

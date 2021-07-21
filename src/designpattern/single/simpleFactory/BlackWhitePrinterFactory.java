@@ -1,8 +1,8 @@
 package designpattern.single.simpleFactory;
 
 /**
- * @Author G_Y
- * @Date 2020/9/6 20:26
+ * @author ManJiis
+ * @since 2020/9/6 20:26
  * @Description: // 黑白打印机工厂
  **/
 public class BlackWhitePrinterFactory implements IPrinterFactory {

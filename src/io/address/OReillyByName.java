@@ -7,7 +7,7 @@ public class OReillyByName {
 
     /**
      * @author GY
-     * @date 2018年10月6日
+     * @since 2018年10月6日
      * @功能:建立与本地DNS服务器的一个连接，来查找名字和数字地址
      * @说明:
      */

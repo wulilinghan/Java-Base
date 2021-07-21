@@ -5,8 +5,8 @@ import proxy.cglibproxy.User;
 import java.util.concurrent.atomic.AtomicReference;
 
 /**
- * @Author G_Y
- * @Date 2020/6/21 19:57
+ * @author ManJiis
+ * @since 2020/6/21 19:57
  * @Description: 单例类
  **/
 public class SingleBean {

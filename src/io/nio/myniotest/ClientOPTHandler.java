@@ -12,9 +12,9 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @Author: GY.
+ * @author: GY.
  * @Description: TODO()
- * @Date:Created in 2019/11/21 0021.
+ * @since:Created in 2019/11/21 0021.
  * @Modified By:
  */
 public class ClientOPTHandler implements Runnable {

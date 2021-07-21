@@ -4,8 +4,8 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
 /**
- * @Author G_Y
- * @Date 2020/9/11 19:32
+ * @author ManJiis
+ * @since 2020/9/11 19:32
  * @Description: // 代理增强逻辑 实现器   (它是实现JDK动态代理的桥梁)
  **/
 public class MyInvocationHandler implements InvocationHandler {

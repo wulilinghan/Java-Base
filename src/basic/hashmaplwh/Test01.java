@@ -3,8 +3,8 @@ package basic.hashmaplwh;
 import java.util.HashMap;
 
 /**
- * @Author G_Y
- * @Date 2020/7/1 19:00
+ * @author ManJiis
+ * @since 2020/7/1 19:00
  * @Description: // TODO
  **/
 public class Test01 {

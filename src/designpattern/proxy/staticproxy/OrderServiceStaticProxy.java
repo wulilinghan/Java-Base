@@ -1,8 +1,8 @@
 package designpattern.proxy.staticproxy;
 
 /**
- * @Author G_Y
- * @Date 2020/6/26 16:49
+ * @author ManJiis
+ * @since 2020/6/26 16:49
  * @Description: // 代理类
  **/
 public class OrderServiceStaticProxy extends OrderService {

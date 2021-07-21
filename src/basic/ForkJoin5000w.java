@@ -18,9 +18,9 @@ public class ForkJoin5000w {
         }
     }
      /**
-      * @Author G_Y
+      * @author ManJiis
       * @Description // TODO
-      * @Date 2020/6/5 10:25
+      * @since 2020/6/5 10:25
       * @Param
       * @return
       **/

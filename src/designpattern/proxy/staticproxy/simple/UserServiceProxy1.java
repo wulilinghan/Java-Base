@@ -1,8 +1,8 @@
 package designpattern.proxy.staticproxy.simple;
 
 /**
- * @Author G_Y
- * @Date 2020/9/11 18:47
+ * @author ManJiis
+ * @since 2020/9/11 18:47
  * @Description: // 代理类
  **/
 public class UserServiceProxy1 implements IUserService{

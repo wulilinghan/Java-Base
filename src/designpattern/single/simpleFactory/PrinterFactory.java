@@ -1,8 +1,8 @@
 package designpattern.single.simpleFactory;
 
 /**
- * @Author G_Y
- * @Date 2020/9/6 20:14
+ * @author ManJiis
+ * @since 2020/9/6 20:14
  * @Description: // 静态工厂类
  **/
 public class PrinterFactory {

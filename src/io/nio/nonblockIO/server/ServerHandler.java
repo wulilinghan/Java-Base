@@ -8,7 +8,7 @@ import java.util.concurrent.*;
 
 /**
  * nio 具体 就位key 处理
- * @Author: GY.
+ * @author: GY.
  */
 public class ServerHandler implements Runnable {
 

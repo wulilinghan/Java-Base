@@ -1,4 +1,6 @@
-package juc.aqs;
+package juc.aqs.countdown;
+
+import juc.aqs.common.NamedThreadFactory;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,16 +12,16 @@ import java.util.concurrent.TimeUnit;
 /**
  * 允许一个或多个线程等待，直到其他线程中的一组操作完成的同步辅助。
  *
- * @program: java-base->CountDownLatchLearn
- * @description:
- * @author: G_Y
- * @since: 2019-08-21 13:43
+ * @author ManJiis
+ * @program java-base->CountDownLatchLearn
+ * @since 2019-08-21 13:43
  **/
 public class CountDownLatchLearn {
 
     static ThreadPoolExecutor threadPoolExecutor =
             new ThreadPoolExecutor(2, 4,
                     1, TimeUnit.SECONDS, new ArrayBlockingQueue<>(50),
+                    new NamedThreadFactory("CountDownLatch-", false),
                     new ThreadPoolExecutor.CallerRunsPolicy());
 
     public static void main(String[] args) {
@@ -32,8 +34,10 @@ public class CountDownLatchLearn {
 
         CountDownLatch countDownLatch = new CountDownLatch(ids.size());
 
+        ArrayList<Integer> resultList = new ArrayList<>();
+
         for (Integer taskId : ids) {
-            threadPoolExecutor.execute(new MyTaskRun(countDownLatch, taskId));
+            threadPoolExecutor.execute(new MyTaskRun(countDownLatch, taskId, resultList));
         }
 
         try {
@@ -44,23 +48,27 @@ public class CountDownLatchLearn {
         }
 
         System.out.println("main over");
+        System.out.println("resultList = " + resultList);
+        threadPoolExecutor.shutdown();
     }
 }
 
 class MyTaskRun implements Runnable {
     private final CountDownLatch countDownLatch;
     private final Integer id;
+    private final List<Integer> resultList;
 
-    public MyTaskRun(CountDownLatch countDownLatch, Integer id) {
+    public MyTaskRun(CountDownLatch countDownLatch, Integer id, List<Integer> resultList) {
         this.countDownLatch = countDownLatch;
         this.id = id;
+        this.resultList = resultList;
     }
 
     @Override
     public void run() {
         try {
             System.out.println(id);
-            Thread.sleep(100);
+            resultList.add(id + 1);
         } catch (Exception e) {
             e.printStackTrace();
         } finally {

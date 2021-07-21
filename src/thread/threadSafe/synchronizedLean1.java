@@ -3,8 +3,8 @@ package thread.threadSafe;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @Author G_Y
- * @Date 2020/8/30 20:19
+ * @author ManJiis
+ * @since 2020/8/30 20:19
  * @Description: // synchronized初级使用篇
  **/
 public class synchronizedLean1 {

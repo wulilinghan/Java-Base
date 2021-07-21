@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @program: java-base->ZhiAndYinYong
  * @description:
- * @author: G_Y
+ * @author: ManJiis
  * @since: 2019-09-18 16:23
  **/
 public class ZhiAndYinYong {

@@ -15,7 +15,7 @@ public class ReisterServer {
 
     /**
      * @author GY
-     * @date 2019年11月18日
+     * @since 2019年11月18日
      * @说明: 服务注册到文件
      */
     public static void regist() {

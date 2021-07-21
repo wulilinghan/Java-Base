@@ -6,7 +6,7 @@ import proxy.jdkproxy.ISubject;
 /**
  * @program: java-base->Test
  * @description: test cglib
- * @author: G_Y
+ * @author: ManJiis
  * @since: 2019-08-21 18:05
  **/
 public class Test {

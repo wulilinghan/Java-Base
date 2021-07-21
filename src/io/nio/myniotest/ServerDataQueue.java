@@ -7,9 +7,9 @@ import rpc.socket.contract.ParamDTO;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * @Author: GY.
+ * @author: GY.
  * @Description: TODO()
- * @Date:Created in 2019/11/20 0020.
+ * @since:Created in 2019/11/20 0020.
  * @Modified By:
  */
 public class ServerDataQueue {

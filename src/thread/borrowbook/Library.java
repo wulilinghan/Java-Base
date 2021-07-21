@@ -2,7 +2,7 @@ package thread.borrowbook;
 
 /**
  * @author GY
- * @date 2019年7月6日
+ * @since 2019年7月6日
  * @说明: 图书馆
  */
 public class Library {

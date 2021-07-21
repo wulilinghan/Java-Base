@@ -1,8 +1,8 @@
 package structure;
 
 /**
- * @author G_Y
- * @date 2019年8月12日
+ * @author ManJiis
+ * @since 2019年8月12日
  * @说明: 
  */
 public class MyNode {

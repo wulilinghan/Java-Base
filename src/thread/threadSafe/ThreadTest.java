@@ -3,7 +3,7 @@ package thread.threadSafe;
 /**
  * @program: java-base->ThreadTest
  * @description: 同步操作——赋值
- * @author: G_Y
+ * @author: ManJiis
  * @since: 2019-08-27 16:27
  **/
 public class ThreadTest {

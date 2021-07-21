@@ -1,8 +1,8 @@
 package designpattern.proxy.staticproxy.simple;
 
 /**
- * @Author G_Y
- * @Date 2020/9/11 18:51
+ * @author ManJiis
+ * @since 2020/9/11 18:51
  * @Description: // 客户端 测试
  **/
 public class Client {

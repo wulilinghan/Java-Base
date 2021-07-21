@@ -1,8 +1,8 @@
 package designpattern.proxy.staticproxy;
 
 /**
- * @Author G_Y
- * @Date 2020/6/26 17:02
+ * @author ManJiis
+ * @since 2020/6/26 17:02
  * @Description: // TODO
  **/
 public class Client {

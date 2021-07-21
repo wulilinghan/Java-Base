@@ -1,8 +1,8 @@
 package basic.enumtest;
 
 /**
- * @Author G_Y
- * @Date 2020/6/10 10:25
+ * @author ManJiis
+ * @since 2020/6/10 10:25
  * @Description: 模拟枚举类
  **/
 public abstract class LikeEnum {

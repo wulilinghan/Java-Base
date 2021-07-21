@@ -13,7 +13,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock.ReadLock;
 /**
  * 商品抢购
  *
- * @author G_Y
+ * @author ManJiis
  * @program java-base->LockLearn
  * @since 2019-08-21 13:43
  **/

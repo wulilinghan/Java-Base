@@ -1,8 +1,8 @@
 package designpattern.single.simpleFactory;
 
 /**
- * @Author G_Y
- * @Date 2020/9/6 20:28
+ * @author ManJiis
+ * @since 2020/9/6 20:28
  * @Description: // 彩色打印机工厂
  **/
 public class ColorfulPrinterFactory implements IPrinterFactory {

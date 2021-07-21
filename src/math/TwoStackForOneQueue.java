@@ -4,8 +4,8 @@ import java.util.Queue;
 import java.util.Stack;
 
 /**
- * @Author G_Y
- * @Date 2020/10/19 8:43
+ * @author ManJiis
+ * @since 2020/10/19 8:43
  * @Description: // TODO
  **/
 public class TwoStackForOneQueue {

@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * @Author G_Y
- * @Date 2020/6/18 11:42
+ * @author ManJiis
+ * @since 2020/6/18 11:42
  * @Description: 排序1G 1亿 数据
  **/
 public class DivideAndConquer1GInt {

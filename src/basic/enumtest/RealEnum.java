@@ -1,8 +1,8 @@
 package basic.enumtest;
 
 /**
- * @Author G_Y
- * @Date 2020/6/10 10:47
+ * @author ManJiis
+ * @since 2020/6/10 10:47
  * @Description: 枚举类
  **/
 public enum RealEnum {

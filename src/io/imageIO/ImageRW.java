@@ -9,9 +9,9 @@ import java.awt.image.BufferedImage;
 import java.io.*;
 
 /**
- * @Author: Administrator.
+ * @author: Administrator.
  * @Description: TODO()
- * @Date:Created in 2019/10/10 0010.
+ * @since:Created in 2019/10/10 0010.
  * @Modified By:
  */
 public class ImageRW {

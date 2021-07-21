@@ -7,7 +7,7 @@ import java.util.Map;
 /**
  * @program: java-base->ParentAndSon
  * @description:
- * @author: G_Y
+ * @author: ManJiis
  * @since: 2019-09-18 15:30
  **/
 public class ParentAndSon {

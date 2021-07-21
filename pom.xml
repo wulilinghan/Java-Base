@@ -65,6 +65,11 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.58</version>
         </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.20</version>
+        </dependency>
 
         <!-- https://mvnrepository.com/artifact/javassist/javassist -->
         <!--<dependency>

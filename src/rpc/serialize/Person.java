@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 /**
  * @author GY
- * @date 2018年10月6日
+ * @since 2018年10月6日
  * @说明:Hessian序列化跟Java序列化一样，序列化对象同样需要实现Serializable接口
  */
 public class Person implements Serializable {

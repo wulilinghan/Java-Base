@@ -3,8 +3,8 @@ package designpattern.single.s1;
 import java.util.concurrent.atomic.AtomicReference;
 
 /**
- * @Author G_Y
- * @Date 2020/9/6 18:41
+ * @author ManJiis
+ * @since 2020/9/6 18:41
  * @Description: // 整个程序中 只提供一个 User 对象 给 客户端使用
  **/
 public class User {

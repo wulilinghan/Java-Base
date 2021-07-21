@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @author GY
- * @date 2019年11月18日
+ * @since 2019年11月18日
  * @说明: 服务调用方启动类
  */
 public class TestOneRpc {

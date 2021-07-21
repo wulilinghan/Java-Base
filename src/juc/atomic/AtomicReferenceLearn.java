@@ -3,13 +3,13 @@ package juc.atomic;
 import java.util.concurrent.atomic.AtomicReference;
 
 /**
- * @program: java-base->AtomicLearn
- * @description:如果使用原子性对象引用，在多线程情况下进行对象的更新可以确保一致性
- * @author: G_Y
- * @since: 2019-08-21 13:42
+ * 如果使用原子性对象引用，在多线程情况下进行对象的更新可以确保一致性
+ *
+ * @author ManJiis
+ * @since 2019-08-21 13:42
  **/
 public class AtomicReferenceLearn {
-    private static Person person;
+    static Person person;
     static AtomicReference<Person> atomicReference = new AtomicReference<>();
 
     public static void main(String[] args) {

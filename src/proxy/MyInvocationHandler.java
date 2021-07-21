@@ -6,7 +6,7 @@ import java.lang.reflect.Proxy;
 
 /**
  * @author GY
- * @date 2019年6月12日
+ * @since 2019年6月12日
  * @说明: JDK动态代理
  */
 public class MyInvocationHandler implements InvocationHandler {

@@ -3,8 +3,8 @@ package designpattern.proxy.jdkproxy;
 import java.lang.reflect.Proxy;
 
 /**
- * @Author G_Y
- * @Date 2020/9/11 19:44
+ * @author ManJiis
+ * @since 2020/9/11 19:44
  * @Description: // TODO
  **/
 public class Client {

@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * @program: java-base->RedistConnector
  * @description:
- * @author: G_Y
+ * @author: ManJiis
  * @since: 2019-08-23 12:50
  **/
 public class RedistConnector {

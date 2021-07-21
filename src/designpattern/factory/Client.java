@@ -1,8 +1,8 @@
 package designpattern.factory;
 
 /**
- * @Author G_Y
- * @Date 2020/6/26 15:46
+ * @author ManJiis
+ * @since 2020/6/26 15:46
  * @Description: // TODO
  **/
 public class Client {

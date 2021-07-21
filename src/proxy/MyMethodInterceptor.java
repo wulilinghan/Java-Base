@@ -8,7 +8,7 @@ import org.springframework.cglib.proxy.MethodProxy;
 
 /**
  * @author GY
- * @date 2019年6月12日
+ * @since 2019年6月12日
  * @说明: CGlib动态代理
  */
 public class MyMethodInterceptor implements MethodInterceptor {

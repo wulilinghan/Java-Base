@@ -6,8 +6,8 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
- * @Author G_Y
- * @Date 2020/8/6 10:53
+ * @author ManJiis
+ * @since 2020/8/6 10:53
  * @Description: // List 转 map操作
  **/
 public class List2Map {

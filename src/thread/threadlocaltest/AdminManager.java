@@ -3,7 +3,7 @@ package thread.threadlocaltest;
 import proxy.cglibproxy.User;
 
 /**
- * G_Y
+ * ManJiis
  */
 public class AdminManager {
     private static final ThreadLocal<UserInfo> threadLocal = new ThreadLocal<>();

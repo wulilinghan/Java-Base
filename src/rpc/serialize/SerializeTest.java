@@ -8,7 +8,7 @@ import java.io.ObjectOutputStream;
 
 /**
  * @author GY
- * @date 2018年10月6日
+ * @since 2018年10月6日
  * @说明:对象序列化、反序列化测试
  */
 public class SerializeTest {

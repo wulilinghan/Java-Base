@@ -3,8 +3,8 @@ package designpattern.proxy.staticproxy;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @Author G_Y
- * @Date 2020/6/26 16:44
+ * @author ManJiis
+ * @since 2020/6/26 16:44
  * @Description: // TODO
  **/
 public class OrderService implements  IOrderService {

@@ -1,8 +1,8 @@
 package basic;
 
 /**
- * @Author G_Y
- * @Date 2020/11/9 21:16
+ * @author ManJiis
+ * @since 2020/11/9 21:16
  * @Description: // TODO
  **/
 import org.apache.commons.codec.binary.Base64;

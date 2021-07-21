@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * @program: java-base->RedistTest1
  * @description:
- * @author: G_Y
+ * @author: ManJiis
  * @since: 2019-08-23 12:49
  **/
 public class RedistTest1 {

@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * @program: java-base->RedisTest2
  * @description:
- * @author: G_Y
+ * @author: ManJiis
  * @since: 2019-08-23 12:49
  **/
 public class RedisTest2 {

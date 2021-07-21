@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * @program: java-base->Componet
  * @description:
- * @author: G_Y
+ * @author: ManJiis
  * @since: 2019-08-28 15:15
  **/
 public class Component {

@@ -2,7 +2,7 @@ package math;
 
 /**
  * @author GY
- * @date 2018年10月5日
+ * @since 2018年10月5日
  * @说明:递归台阶走法计算
  */
 public class CountStage {
@@ -18,7 +18,7 @@ public class CountStage {
 
     /**
      * @author GY
-     * @date 2018年10月5日
+     * @since 2018年10月5日
      * @功能:10层台阶，可以跨一层，可以跨两层，走完10层共有多少种走法
      * @说明:要么从第九层跨入第十层、要么从第八层跨入第十层
      */
@@ -34,7 +34,7 @@ public class CountStage {
 
     /**
      * @author GY
-     * @date 2018年10月5日
+     * @since 2018年10月5日
      * @功能:算法优化，使用迭代代替递归
      * @说明:
      */

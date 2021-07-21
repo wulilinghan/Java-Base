@@ -1,8 +1,8 @@
 package designpattern.proxy.staticproxy.simple;
 
 /**
- * @Author G_Y
- * @Date 2020/9/11 19:03
+ * @author ManJiis
+ * @since 2020/9/11 19:03
  * @Description: // 静态代理类  方式2
  **/
 public class UserServiceProxy2 extends UserService {

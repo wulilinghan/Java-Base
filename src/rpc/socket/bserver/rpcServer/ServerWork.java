@@ -13,14 +13,14 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @author GY
- * @date 2019年11月18日
+ * @since 2019年11月18日
  * @说明: 服务提供方工作组
  */
 public class ServerWork {
 
     /**
      * @author GY
-     * @date 2019年11月18日
+     * @since 2019年11月18日
      * @说明: 开始工作
      */
     public static void startWork() {
@@ -49,7 +49,7 @@ public class ServerWork {
 
 /**
  * @author GY
- * @date 2019年11月18日
+ * @since 2019年11月18日
  * @说明: 
  */
 class HandlerTask implements Runnable {
@@ -122,7 +122,7 @@ class HandlerTask implements Runnable {
 
     /**
      * @author GY
-     * @date 2019年11月18日
+     * @since 2019年11月18日
      * @说明: 执行多线程处理请求任务
      */
     public void doTask() {

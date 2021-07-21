@@ -1,8 +1,8 @@
 package thread.threadlocaltest.code39;
 
 /**
- * @Author G_Y
- * @Date 2020/9/14 18:44
+ * @author ManJiis
+ * @since 2020/9/14 18:44
  * @Description: // TODO
  **/
 public class PageHelper {

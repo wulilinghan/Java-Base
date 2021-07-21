@@ -1,8 +1,8 @@
 package basic.enumtest;
 
 /**
- * @Author G_Y
- * @Date 2020/6/10 9:47
+ * @author ManJiis
+ * @since 2020/6/10 9:47
  * @Description:
  **/
 public class Test {

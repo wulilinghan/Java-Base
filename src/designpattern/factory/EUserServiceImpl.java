@@ -1,9 +1,9 @@
 package designpattern.factory;
 
 /**
- * @Author: ThinkPad.
+ * @author: ThinkPad.
  * @Description: TODO()
- * @Date:Created in 2019/8/16.
+ * @since:Created in 2019/8/16.
  * @Modified By:
  */
 public enum EUserServiceImpl {

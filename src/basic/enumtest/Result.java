@@ -1,7 +1,7 @@
 package basic.enumtest;
 /**
- * @Author G_Y
- * @Date 2020/6/10 9:45
+ * @author ManJiis
+ * @since 2020/6/10 9:45
  * @Description: 返回调用方的Result对象
  **/
 public class Result {

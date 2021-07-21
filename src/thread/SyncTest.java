@@ -3,7 +3,7 @@ package thread;
 /**
  * @program: java-base->SyncTest
  * @description:
- * @author: G_Y
+ * @author: ManJiis
  * @since: 2019-09-18 18:45
  **/
 public class SyncTest {

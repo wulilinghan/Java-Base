@@ -9,7 +9,7 @@ import java.util.function.Function;
 /**
  * @program: java-base->SimpleTest
  * @description: 减少程序中过多的if-else、switch-case使用
- * @author: G_Y
+ * @author: ManJiis
  * @since: 2019-08-28 15:14
  * 代码是可鉴赏的艺术品，机器运行只是它的附属功能
  **/

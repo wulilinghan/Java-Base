@@ -3,9 +3,9 @@ package cls.annotation;
 import java.lang.annotation.*;
 
 /**
- * @Author: ThinkPad.
+ * @author: ThinkPad.
  * @Description: TODO()
- * @Date:Created in 2019/8/25.
+ * @since:Created in 2019/8/25.
  * @Modified By:
  */
 @Target(ElementType.TYPE)

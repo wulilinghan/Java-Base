@@ -1,8 +1,8 @@
 package designpattern.factory;
 
 /**
- * @Author G_Y
- * @Date 2020/6/26 15:48
+ * @author ManJiis
+ * @since 2020/6/26 15:48
  * @Description:
  **/
 public class ComputerFactory {

@@ -1,9 +1,9 @@
 package math.simplecode;
 
 /**
- * @Author: ThinkPad.
+ * @author: ThinkPad.
  * @Description: TODO()
- * @Date:Created in 2019/8/28.
+ * @since:Created in 2019/8/28.
  * @Modified By:
  */
 public enum Handler {

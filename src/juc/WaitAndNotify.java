@@ -1,8 +1,8 @@
 package juc;
 
 /**
- * @Author G_Y
- * @Date 2020/7/21 18:41
+ * @author ManJiis
+ * @since 2020/7/21 18:41
  * @Description: // 学习如何使用wait & notify
  **/
 public class WaitAndNotify {

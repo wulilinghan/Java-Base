@@ -3,7 +3,7 @@ package designpattern.factory;
 /**
  * @program: java-base->SimpleFactory
  * @description: 简单工厂
- * @author: G_Y
+ * @author: ManJiis
  * @since: 2019-08-16 16:54
  **/
 public class SimpleFactory {

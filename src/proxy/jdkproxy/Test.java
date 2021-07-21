@@ -5,7 +5,7 @@ import java.lang.reflect.Proxy;
 /**
  * @program: java-base->Test
  * @description: test
- * @author: G_Y
+ * @author: ManJiis
  * @since: 2019-08-19 18:52
  **/
 public class Test {

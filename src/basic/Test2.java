@@ -3,9 +3,9 @@ package basic;
 import java.util.HashMap;
 
 /**
- * @Author: Administrator.
+ * @author: Administrator.
  * @Description: TODO()
- * @Date:Created in 2019/10/16 0016.
+ * @since:Created in 2019/10/16 0016.
  * @Modified By:
  */
 public class Test2 {

@@ -11,7 +11,7 @@ import java.util.concurrent.locks.Lock;
 /**
  * @program: java-base->HashMapTest
  * @description: hashMap
- * @author: G_Y
+ * @author: ManJiis
  * @since: 2019-09-27 20:26
  **/
 public class HashMapTest {
