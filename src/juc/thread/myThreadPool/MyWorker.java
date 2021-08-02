@@ -1,11 +1,12 @@
-package cn.jerrychen.ThreadPool;
+package juc.thread.myThreadPool;
 
-import java.util.List;
-import java.util.Queue;
 import java.util.concurrent.BlockingQueue;
 
-/*
-执行任务//yuangong
+/**
+ * 执行任务
+ *
+ * @author ManJiis
+ * @since 2021-07-31
  */
 public class MyWorker extends Thread {
     private String name;

@@ -1,4 +1,4 @@
-package juc.ForkJoin;
+package juc.forkJoin;
 
 import java.util.concurrent.RecursiveTask;
 
