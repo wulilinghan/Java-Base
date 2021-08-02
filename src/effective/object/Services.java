@@ -4,9 +4,10 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
+ * 获取具体service实例的工厂
+ *
  * @author GY
  * @since 2018年9月26日
- * @说明:获取具体service实例的工厂
  */
 public class Services {
 

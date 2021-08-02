@@ -5,10 +5,10 @@ import java.util.concurrent.TimeUnit;
 /**
  * @author ManJiis
  * @since 2020/6/26 16:44
- * @Description: // TODO
  **/
-public class OrderService implements  IOrderService {
+public class OrderService implements IOrderService {
 
+    @Override
     public Order addOrder(Integer userId, Integer money) {
         // 打印参数
 
@@ -22,15 +22,17 @@ public class OrderService implements  IOrderService {
 
         // 打印结果
         // 耗时
-        return new Order(1,money,userId);
+        return new Order(1, money, userId);
     }
 }
+
 class Order {
     public Order(Integer id, Integer money, Integer userId) {
         this.id = id;
         this.money = money;
         this.userId = userId;
     }
+
     private Integer id;
     private Integer money;
     private Integer userId;

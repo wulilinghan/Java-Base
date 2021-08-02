@@ -4,12 +4,14 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
 /**
+ * 代理增强逻辑 实现器   (它是实现JDK动态代理的桥梁)
+ *
  * @author ManJiis
  * @since 2020/9/11 19:32
- * @Description: // 代理增强逻辑 实现器   (它是实现JDK动态代理的桥梁)
  **/
 public class MyInvocationHandler implements InvocationHandler {
-    private Object subject;// 委托对象
+    // 委托对象
+    private Object subject;
 
     public MyInvocationHandler() {
     }
@@ -27,7 +29,7 @@ public class MyInvocationHandler implements InvocationHandler {
             // 执行原目标逻辑
             // 反射执行 委托逻辑
             result = method.invoke(subject, args);
-        }catch (Exception e){
+        } catch (Exception e) {
             throwE();
             return result;
         }
@@ -35,13 +37,16 @@ public class MyInvocationHandler implements InvocationHandler {
         after();
         return result;
     }
-    private void before(){
+
+    private void before() {
         System.out.println("before");
     }
-    private void after(){
+
+    private void after() {
         System.out.println("after");
     }
-    private void throwE(){
+
+    private void throwE() {
         System.out.println("after");
     }
 }

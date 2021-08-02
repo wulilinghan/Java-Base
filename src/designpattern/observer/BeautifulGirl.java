@@ -8,19 +8,24 @@ public class BeautifulGirl {
     private List<Concerner> concerners = new ArrayList<>();
     //我是否生病了
     private boolean isFallIll = false;
+
     //添加我的亲人
     public void addRelatives(Concerner concerner) {
         this.concerners.add(concerner);
     }
+
     public boolean isFallIll() {
         return isFallIll;
     }
+
     //生病了
     public void setFallIll(Boolean isFallIll) {
         this.isFallIll = isFallIll;
-        if(isFallIll)
-            this.notifyAllRelatives();            
+        if (isFallIll) {
+            this.notifyAllRelatives();
+        }
     }
+
     //告知我的家人
     private void notifyAllRelatives() {
         for (Concerner observer : concerners) {

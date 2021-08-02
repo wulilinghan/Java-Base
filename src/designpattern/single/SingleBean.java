@@ -1,21 +1,23 @@
 package designpattern.single;
 
-import proxy.cglibproxy.User;
 
 import java.util.concurrent.atomic.AtomicReference;
 
 /**
+ * 单例类
+ *
  * @author ManJiis
  * @since 2020/6/21 19:57
- * @Description: 单例类
  **/
 public class SingleBean {
-    private Integer a=0; // 多线程并发访问，修改同一个资源，则存在线程安全问题
+    private Integer a = 0; // 多线程并发访问，修改同一个资源，则存在线程安全问题
+
     public synchronized int f() {
 //        int a = 100;
         a++;
         return a;
     }
+
     // 多线程开发过程中 的 有序性的 问题
     /*static volatile boolean a;//volatile避免指令重排，解决内存可见性
     public static void main(String[] args) {
@@ -30,7 +32,8 @@ public class SingleBean {
     }
 
     // 构造私有化
-    private SingleBean(){}
+    private SingleBean() {
+    }
     // 提供入口获取当前类-单例
 
     // 饿汉式
@@ -74,6 +77,7 @@ public class SingleBean {
     // 第五种 CAS 自旋锁的方式创建单例
     //基于CAS的单例模式
     private static final AtomicReference<SingleBean> INSTANCE = new AtomicReference<SingleBean>();
+
     public static final SingleBean getInstance() {
         for (; ; ) {
             SingleBean current = INSTANCE.get();

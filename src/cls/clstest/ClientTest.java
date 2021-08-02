@@ -3,7 +3,6 @@ package cls.clstest;
 import cls.annotation.Autowired;
 import cls.annotation.Controller;
 import cls.annotation.RequestMapping;
-import proxy.cglibproxy.User;
 
 import java.lang.reflect.*;
 
@@ -12,9 +11,9 @@ public class ClientTest {
 
         Class<?> controllerClass = Class.forName("cls.clstest.UserController");
         Field userServiceF = controllerClass.getDeclaredField("userService");
-        boolean b = userServiceF.isAnnotationPresent(Autowired.class);
-        System.out.println(b);
-        if(b) {
+        boolean annotationPresent = userServiceF.isAnnotationPresent(Autowired.class);
+        System.out.println(annotationPresent);
+        if(annotationPresent) {
             // 如果当前字段被@Autowired修饰，Spring IOC 初始化过程中，则会考虑针对当前字段做自动注入操作
             // 获取字段的类型
             Class<?> type = userServiceF.getType();

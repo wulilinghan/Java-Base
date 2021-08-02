@@ -54,7 +54,7 @@ public class ServerHandler implements Runnable {
         } catch (InvocationTargetException e1) {
             e1.printStackTrace();
         } finally {
-            System.out.println("close server thread socket");
+            System.out.println("close server juc.thread socket");
             try {
                 outputStream.close();
                 inputStream.close();
