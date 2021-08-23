@@ -51,6 +51,7 @@ class User {
     private int id;
     private String name;
     private int age;
+    private String phone;
 
     public User() {
     }
@@ -59,6 +60,13 @@ class User {
         this.id = id;
         this.name = name;
         this.age = age;
+    }
+
+    public User(int id, String name, int age, String phone) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.phone = phone;
     }
 
     public int getId() {
@@ -85,12 +93,21 @@ class User {
         this.age = age;
     }
 
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", age=" + age +
+                ", phone='" + phone + '\'' +
                 '}';
     }
 }
