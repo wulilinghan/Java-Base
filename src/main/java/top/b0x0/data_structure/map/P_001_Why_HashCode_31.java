@@ -1,6 +1,11 @@
 package top.b0x0.data_structure.map;
 
+import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 /**
  * HashCode计算为什么使用 31 作为乘数？
@@ -9,7 +14,7 @@ import java.util.HashMap;
  * @since 2021-09-16
  * @since JDK1.8
  */
-public class Why_HashCode_31 {
+public class P_001_Why_HashCode_31 {
     public static void main(String[] args) {
 
         User user = new User("haha", 17);
@@ -27,7 +32,7 @@ public class Why_HashCode_31 {
          */
 
         //  不重写equals和hashcode方法时  获取值为null
-        // 默认情况下，hashCode方法是将对象的存储地址进行映射
+        // Object.hashCode()方法是将对象的内存地址转换为Integer
         System.out.println("haha = " + haha);
 
     }
