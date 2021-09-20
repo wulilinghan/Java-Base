@@ -1,11 +1,6 @@
-package top.b0x0.data_structure.map;
+package top.b0x0.data_structure.map.p_001;
 
-import java.io.*;
-import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
 
 /**
  * HashCode计算为什么使用 31 作为乘数？

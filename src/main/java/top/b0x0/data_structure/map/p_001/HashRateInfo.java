@@ -1,7 +1,7 @@
-package top.b0x0.data_structure.map;
+package top.b0x0.data_structure.map.p_001;
 
 /**
- * hash 因子碰撞测试
+ * hash因子碰撞率测试
  *
  * @author ManJiis
  * @since 2021-09-17
@@ -29,6 +29,9 @@ public class HashRateInfo {
      * 碰撞比率
      */
     private double collisionRate;
+
+    public HashRateInfo() {
+    }
 
     public HashRateInfo(int maxHash, int minHash, int multiplier, int collisionCount, double collisionRate) {
         this.maxHash = maxHash;
@@ -76,5 +79,16 @@ public class HashRateInfo {
 
     public void setCollisionRate(double collisionRate) {
         this.collisionRate = collisionRate;
+    }
+
+    @Override
+    public String toString() {
+        return "HashRateInfo{" +
+                "maxHash=" + maxHash +
+                ", minHash=" + minHash +
+                ", multiplier=" + multiplier +
+                ", collisionCount=" + collisionCount +
+                ", collisionRate=" + collisionRate +
+                '}';
     }
 }
