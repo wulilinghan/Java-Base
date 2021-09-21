@@ -58,8 +58,41 @@ public class p_2_HashMethod {
      * @param key /
      * @return /
      */
-    static int hash(Object key) {
+    private static int hash(Object key) {
         int h;
         return (key == null) ? 0 : (h = key.hashCode()) ^ (h >>> 16);
     }
+
+    /**
+     * 不经过扰动
+     *
+     * @param key /
+     * @return /
+     */
+    private static int noHash(Object key) {
+        return (key == null) ? 0 : key.hashCode();
+    }
+
+    /**
+     * 经过扰动函数计算出来的key下标
+     *
+     * @param key     /
+     * @param tabSize 数组长度
+     * @return /
+     */
+    public static int hashIdx(Object key, int tabSize) {
+        return hash(key) & (tabSize - 1);
+    }
+
+    /**
+     * 不经过扰动函数计算出来的key下标
+     *
+     * @param key     /
+     * @param tabSize 数组长度
+     * @return /
+     */
+    public static int noHashIdx(Object key, int tabSize) {
+        return noHash(key) & (tabSize - 1);
+    }
+
 }
