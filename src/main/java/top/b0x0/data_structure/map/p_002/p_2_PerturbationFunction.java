@@ -41,7 +41,7 @@ public class p_2_PerturbationFunction {
     }
 
     /**
-     * hashmap 中的扰动函数
+     * hashmap 中的扰动函数 返回一个新的hash值
      *
      * @param key /
      * @return /
