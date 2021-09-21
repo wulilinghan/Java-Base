@@ -21,6 +21,7 @@ public class operator {
 
 //        按位与();
 //        按位或();
+        异或();
         int a = 16, b = -16, c = 4;
         String binary_16 = Integer.toBinaryString(a);
         String binary_fu16 = Integer.toBinaryString(b);
@@ -44,8 +45,7 @@ public class operator {
     }
 
     /**
-     * & 运算规则: 两个为真才为真
-     * 1&1=1 , 1&0=0 , 0&1=0 , 0&0=0
+     * & 运算规则: 两个为真才为真 1&1=1 , 1&0=0 , 0&1=0 , 0&0=0
      */
     public static void 按位与() {
         int a = 14, b = 11, c = -11;
@@ -56,13 +56,32 @@ public class operator {
         // 1&1=1，1&0=0，1&1=1，1&0=0
         // 得出结果 1010 ，1010十进制是10
         int i = a & b;
-        System.out.println("i = " + i);
+        log.info("{} & {} = {}", a, b, i);
 
         int y = a & c;
         System.out.println("y = " + y);
 
         System.out.println("Integer.toBinaryString(a) = " + Integer.toBinaryString(a));
         System.out.println("Integer.toBinaryString(c) = " + Integer.toBinaryString(c));
+    }
+
+    /**
+     * ^ 运算规则： 1^0 = 1 , 1^1 = 0 , 0^1 = 1 , 0^0 = 0
+     */
+    public static void 异或() {
+        int a = 14, b = 11, c = -11;
+
+        // 14的二进制是1110，11的二进制是1011，1110 ^ 1011
+        // 1110
+        // 1011
+        // 1^1=0，1^0=1，1^1=0，1^0=1
+        // 得出结果 0101 ，0101十进制是5
+        int i = a ^ b;
+        log.info("{} ^ {} = {}", a, b, i);
+
+
+        int y = a ^ c;
+        log.info("{} ^ {} = {}", a, c, y);
     }
 
     /**
