@@ -1,5 +1,7 @@
 package top.b0x0.operators;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -13,11 +15,32 @@ import java.util.HashMap;
  * @since 2021-07-30
  * @since JDK1.8
  */
+@Slf4j
 public class operator {
     public static void main(String[] args) throws NoSuchAlgorithmException {
 
 //        按位与();
-        按位或();
+//        按位或();
+        int a = 16, b = -16, c = 4;
+        String binary_16 = Integer.toBinaryString(a);
+        String binary_fu16 = Integer.toBinaryString(b);
+        String binary_4 = Integer.toBinaryString(c);
+        System.out.println("binary_16 = " + binary_16);
+        System.out.println("binary_fu16 = " + binary_fu16);
+        System.out.println("binary_4 = " + binary_4);
+
+        int right = a >> c;
+        int right2 = a >>> c;
+        int right3 = b >> c;
+        int right4 = b >>> c;
+        log.info("{} >> {} = {}", binary_16, c, right);
+        log.info("{} >>> {} = {}", binary_16, c, right2);
+        log.info("{} >> {} = {}", binary_fu16, c, right3);
+        log.info("{} >>> {} = {}", binary_fu16, c, right4);
+
+        short as = 1;
+//        int i = "小傅哥".hashCode();
+//        System.out.println("i = " + i);
     }
 
     /**
@@ -69,7 +92,7 @@ public class operator {
         // 4 乘 2的3次方
         int left = 4 << 3; // 32
         /*
-            4的二进制往左移动3位  正数低位补0，负数补1（正数右边补0，负数补1）
+            4的二进制往左移动3位(高位移出(舍弃))  正数低位补0，负数补1（正数右边补0，负数补1）
             100 --》 100000
          */
         // 结果: 32
@@ -87,7 +110,7 @@ public class operator {
         // 16 除 2的3次方
         int right = 16 >> 3;
         /*
-            16的二进制往右移动3位  正数高位补0，负数补1 （正数左边补0，负数补1）
+            16的二进制往右移动3位(低位移出(舍弃))  正数高位补0，负数补1 （正数左边补0，负数补1）
             10000 --》 00010
          */
         // 结果: 2
@@ -99,6 +122,8 @@ public class operator {
 
     /**
      * >>>
+     * 忽略了符号位扩展，0补最高位
+     * 无符号右移规则和右移运算是一样的，只是填充时不管左边的数字是正是负都用0来填充，无符号右移运算只针对[负数]计算，因为对于正数来说这种运算没有意义
      */
     public static void 无符号右位移() {
         String key = "唐桑";
