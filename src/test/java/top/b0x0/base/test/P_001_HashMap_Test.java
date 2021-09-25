@@ -11,9 +11,12 @@ import top.b0x0.data_structure.map.p_001.HashRateInfo;
 import top.b0x0.data_structure.map.p_001.HashUtils;
 import top.b0x0.data_structure.map.p_002.p_2_HashMethod;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Set;
+
+import static com.sun.xml.internal.fastinfoset.util.ValueArray.MAXIMUM_CAPACITY;
 
 /**
  * @author ManJiis
@@ -101,4 +104,119 @@ public class P_001_HashMap_Test {
     }
 
 
+    static final int MAXIMUM_CAPACITY = 1 << 30;
+
+    static int tableSizeFor(int cap) {
+        int n = cap - 1;
+        System.out.println(n + " = " + cap + " - 1 " + Integer.toBinaryString(n));
+        n |= n >>> 1;
+        System.out.println(n + " |= " + n + " >>>1 " + Integer.toBinaryString(n));
+        n |= n >>> 2;
+        System.out.println(n + " |= " + n + " >>>2 " + Integer.toBinaryString(n));
+        n |= n >>> 4;
+        System.out.println(n + " |= " + n + " >>>4 " + Integer.toBinaryString(n));
+        n |= n >>> 8;
+        System.out.println(n + " |= " + n + " >>>8 " + Integer.toBinaryString(n));
+        n |= n >>> 16;
+        System.out.println(n + " |= " + n + " >>>16 " + Integer.toBinaryString(n));
+        return (n < 0) ? 1 : (n >= MAXIMUM_CAPACITY) ? MAXIMUM_CAPACITY : n + 1;
+    }
+
+    @Test
+    public void test_tableSizeFor() {
+//        int i = tableSizeFor(17);
+        //16 - 10000
+        //24 - 11000
+        //30 - 11110
+        //31 - 11111
+        //31 - 11111
+        //31 - 11111
+        //i = 32
+
+//        int i = tableSizeFor(31);
+        //30 - 11110
+        //31 - 11111
+        //31 - 11111
+        //31 - 11111
+        //31 - 11111
+        //31 - 11111
+        //i = 32
+
+//        int i = tableSizeFor(100);
+        //99 - 1100011
+        //115 - 1110011
+        //127 - 1111111
+        //127 - 1111111
+        //127 - 1111111
+        //127 - 1111111
+        //i = 128
+
+        int i = tableSizeFor(129);
+        //128 - 10000000
+        //192 - 11000000
+        //240 - 11110000
+        //255 - 11111111
+        //255 - 11111111
+        //255 - 11111111
+        //i = 256
+
+        System.out.println("i = " + i);
+    }
+
+    @Test
+    public void test_1111(){
+
+    }
+
+    @Test
+    public void test_tableSizeFor_ex() {
+        int i = 17;
+        i += i - 1; // 17 + (16-1) = 33
+        i += i - 2; // 33 + (33-2) = 64
+
+        // i = 64
+        System.out.println("i = " + i);
+    }
+
+    /**
+     * 扩容元素拆分
+     * 为什么扩容，因为数组长度不足了。那扩容最直接的问题，就是需要把元素拆分
+     * 到新的数组中。拆分元素的过程中，原 jdk1.7 中会需要重新计算哈希值，但是
+     * 到 jdk1.8 中已经进行优化，不在需要重新计算
+     */
+    @Test
+    public void test_hashMap() {
+        List<String> list = new ArrayList<>();
+        list.add("jlkk");
+        list.add("lopi");
+        list.add("jmdw");
+        list.add("e4we");
+        list.add("io98");
+        list.add("nmhg");
+        list.add("vfg6");
+        list.add("gfrt");
+        list.add("alpo");
+        list.add("vfbh");
+        list.add("bnhj");
+        list.add("zuio");
+        list.add("iu8e");
+        list.add("yhjk");
+        list.add("plop");
+        list.add("dd0p");
+
+        int tab16 = 16;
+        int tab32 = 32;
+        for (String key : list) {
+            int hash = key.hashCode() ^ (key.hashCode() >>> 16);
+//            System.out.println("字符串：" + key + " \tIdx(16)：" + hashIdx(hash, 16) + " \thash_Binary值：" + Integer.toBinaryString(hash) + " - " + Integer.toBinaryString(hash & 16) + " \t\tIdx(32)：" + hashIdx(hash, 32));
+//            System.out.println(Integer.toBinaryString(key.hashCode()) + " " + Integer.toBinaryString(hash) + " " + Integer.toBinaryString(hashIdx(hash, 32)));
+//            System.out.println("字符串：" + key);
+//            System.out.println("tab[16] idx：" + hashIdx(hash, 16) + "hash_Binary值：" + Integer.toBinaryString(hash) + " - " + Integer.toBinaryString(hash & 16));
+//            System.out.println("tab[32] idx：" + hashIdx(hash, 32));
+        }
+    }
+
+    static int hashIdx(int hash, int size) {
+        return hash & (size - 1);
+    }
 }
