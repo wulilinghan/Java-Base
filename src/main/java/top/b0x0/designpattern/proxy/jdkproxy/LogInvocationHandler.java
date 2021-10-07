@@ -9,16 +9,16 @@ import java.lang.reflect.Method;
  * @author ManJiis
  * @since 2020/9/11 19:32
  **/
-public class SubjectInvocationHandler implements InvocationHandler {
+public class LogInvocationHandler implements InvocationHandler {
     /**
      * 委托对象
      */
     private Object subject;
 
-    public SubjectInvocationHandler() {
+    public LogInvocationHandler() {
     }
 
-    public SubjectInvocationHandler(Object subject) {
+    public LogInvocationHandler(Object subject) {
         this.subject = subject;
     }
 

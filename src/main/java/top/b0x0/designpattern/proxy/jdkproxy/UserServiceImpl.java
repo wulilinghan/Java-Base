@@ -6,7 +6,7 @@ package top.b0x0.designpattern.proxy.jdkproxy;
  * @author ManJiis
  * @since 2020/9/11 19:30
  **/
-public class Subject implements ISubject {
+public class UserServiceImpl implements IUserService {
 
     @Override
     public String sayHello(String name) {
