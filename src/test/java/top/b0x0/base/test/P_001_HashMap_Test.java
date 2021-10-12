@@ -103,6 +103,25 @@ public class P_001_HashMap_Test {
         }
     }
 
+    public int length_1(int i) {
+        return i - 1;
+    }
+
+    @Test
+    public void test_length_1() {
+        int i = length_1(2);
+        String binaryString = Integer.toBinaryString(i);
+        System.out.println("2 binaryString = " + binaryString);
+        i = length_1(16);
+        binaryString = Integer.toBinaryString(i);
+        System.out.println("16 binaryString = " + binaryString);
+        i = length_1(5);
+        binaryString = Integer.toBinaryString(i);
+        System.out.println("5 binaryString = " + binaryString);
+        i = length_1(15);
+        binaryString = Integer.toBinaryString(i);
+        System.out.println("15 binaryString = " + binaryString);
+    }
 
     static final int MAXIMUM_CAPACITY = 1 << 30;
 
@@ -164,7 +183,7 @@ public class P_001_HashMap_Test {
     }
 
     @Test
-    public void test_1111(){
+    public void test_1111() {
 
     }
 
